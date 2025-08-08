@@ -1,37 +1,35 @@
 <html>
-<title>Bola de Drac 5.05 Exploit</title>
+<title>Bola de Drac Hack Offline PS4 5.05</title>
 <style>
 html, body {
-background-image: url('img/background.png');
-background-size: 100%;
-background-repeat: no-repeat;
-background-color: #24272b;
-color: white;
-text-align: center;
-margin: 0px;
-overflow: hidden;
+    background-image: url('img/background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #24272b;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
 }
 h1 {
-text-shadow: 0.1em 0.1em 0.2em white;
-font-size: 25px;
-text-align: center;
-color: black;
+    text-shadow: 0.1em 0.1em 0.2em white;
+    font-size: 25px;
+    text-align: center;
+    color: black;
 }
-.TextCaption{
-display: block;
+.TextCaption {
+    display: block;
     font-size: 20px;
     color: red;
     text-decoration: none;
     text-shadow: 0.1em 0.1em 0.2em white;
 }
-
 a img {
     display: inline-block;  text-decoration: none;
 }
 a {
     display: inline-block;  text-decoration: none;
 }
-
 a:hover {
   animation: shake 0.5s infinite;
 }
@@ -110,7 +108,7 @@ a:hover {
 <br>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Restore()"onMouseOver="msgs.innerHTML='Restaura les dades desades a la càrrega útil de còpia de seguretat'"><img src=img/Restore.png><span class="TextCaption">Restore</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Backup()"onMouseOver="msgs.innerHTML='Fa una còpia de seguretat de les bases de dades, les llicències i les dades dels usuaris de PS4'"><img src=img/Backup.png><span class="TextCaption">Backup</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_todex()"onMouseOver="msgs.innerHTML='Falseja l'ID de destinació perquè coincideixi amb el d'un testkit.'"><img src=img/todex.png><span class="TextCaption">Todex</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_todex()"onMouseOver="msgs.innerHTML='Desbloquejar certes funcionalitats debug/testkit en una consola retail'"><img src=img/todex.png><span class="TextCaption">Todex</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Toolbox()"onMouseOver="msgs.innerHTML='Toolbox By Legendary OSM'"><img src=img/Toolbox.png><span class="TextCaption">TOOLBOX</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_KernelClock()"onMouseOver="msgs.innerHTML='Canvia el rellotge intern de la PS4'"><img src=img/KernelClock.png><span class="TextCaption">Kernel-Clock</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_fanthreshold()" onMouseOver="msgs.innerHTML='FAN SPEED'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED</span></a><select id="tempC"></select>°C
@@ -121,7 +119,15 @@ a:hover {
 </div>
 <br><br>
 <a  style="margin-top: 175px;">
-<h1 style="margin-top: 15px; color: red;">Agraïments especials:<a href="https://twitter.com/sleirsgoevy" style="color: black; margin-left: 15px;">@sleirsgoevy</a><a style="color: black; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color: black; margin-left: 15px;">@SpecterDev</a><a style="color: black; margin-left: 15px;">SiSTR0</a><a style="color: black; margin-left: 15px;">Tots els desenvolupadors que han contribuït al Scene de PS4...</a></h1>
+<h1 style="margin-top: 15px; color: red;">
+    Agraïments especials:
+    <a href="https://twitter.com/sleirsgoevy" style="color: black; margin-left: 15px;">@sleirsgoevy</a>
+    <a style="color: black; margin-left: 15px;">ChendoChap</a>
+    <a href="https://twitter.com/SpecterDev" style="color: black; margin-left: 15px;">@SpecterDev</a>
+    <a style="color: black; margin-left: 15px;">SiSTR0</a>
+    <br>
+    <a style="color: black; margin-left: 15px;">Tots els desenvolupadors que han contribuït al Scene de PS4...</a>
+</h1>
 <script>
 function success(){
 msgs.innerHTML="Bola de Drac 5.05 Exploit Menu";
@@ -266,8 +272,8 @@ load_payload();
 }
 
 function load_todex(){
-msgs.innerHTML = "<h1>Carregant todex... Espereu</h1>"
-LoadedMSG = "<h1>todex Carregat</h1>"
+msgs.innerHTML = "<h1>Carregant ToDEX... Espereu</h1>"
+LoadedMSG = "<h1>ToDEX Carregat</h1>"
 PLfile = "./payloads/todex.bin";
 load_payload();
 }
@@ -310,4 +316,3 @@ load_payload();
 </script>
 </body>
 </html>
-
