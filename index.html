@@ -90,14 +90,7 @@ a:hover {
 <div id="spoiler2" style="display:none"> <br>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_goldhenv24b()"onMouseOver="msgs.innerHTML='GoldHen v2.4.bXX By SiSTRO'"><a href="#"><img =img/.png></a><span class="TextCaption"></span></a>
 </div>
-<div id="spoiler3" style="display:none"> <br>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader1gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 1GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 1G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader2gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 2GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 2G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader3gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 3GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 3G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader4gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 4GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 4G</span></a>
-&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader5gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 5GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 5G</span></a>
-</div>
-<div id="spoiler4" style="display:none">
+<div id="spoiler3" style="display:none">
 &nbsp;&nbsp;&nbsp;<a href="https://pkg-zone.com/install" onMouseOver="progress.innerHTML='Ara podeu instal·lar la Homebrew Store utilitzant només el lloc web PKG-Zone a través del navegador!'"><img src=img/hb.png><span class="TextCaption"> install HB Store</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_Dumper()"onMouseOver="msgs.innerHTML='És el procés de copiar un disc de PS4 i posar-lo a un USB'"><img src=img/Dumper.png><span class="TextCaption">Dumper</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_AppToUsb()"onMouseOver="msgs.innerHTML='Moure els jocs instal·lats a una unitat USB externa'"><img src=img/App2usb.png><span class="TextCaption">App2usb</span></a>
@@ -113,9 +106,16 @@ a:hover {
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_KernelClock()"onMouseOver="msgs.innerHTML='Canvia el rellotge intern de la PS4'"><img src=img/KernelClock.png><span class="TextCaption">Kernel-Clock</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_fanthreshold()" onMouseOver="msgs.innerHTML='FAN SPEED'"><img src=img/FAN50.png><span class="TextCaption">FAN SPEED</span></a><select id="tempC"></select>°C
 </div>
-<div id="spoiler5" style="display:none"> <br>
+<div id="spoiler4" style="display:none"> <br>
 <a href="#" onclick="load_disableUpdates()"onMouseOver="msgs.innerHTML='Desactiva les actualitzacions de PS4'"><img src=img/UpdatesDisable.png><span class="TextCaption">Disable</span></a>
 &nbsp;&nbsp;&nbsp;<a href="#" onclick="load_enablebUpdates()"onMouseOver="msgs.innerHTML='Activa les actualitzacions de PS4'"><img src=img/UpdatesEnable.png><span class="TextCaption">Enable</span></a>
+</div>
+<div id="spoiler5" style="display:none"> <br>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader1gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 1GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 1G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader2gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 2GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 2G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader3gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 3GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 3G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader4gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 4GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 4G</span></a>
+&nbsp;&nbsp;&nbsp;<a href="#" onclick="load_LinuxLoader5gb()" onMouseOver="msgs.innerHTML='Arrencant Linux 5GB on PS4'"><img src=img/linux.png><span class="TextCaption">Linux 5G</span></a>
 </div>
 <br><br>
 <a  style="margin-top: 175px;">
@@ -180,41 +180,6 @@ function load_goldhen(){
 msgs.innerHTML = "<h1>Carregant GoldHEN... Espereu</h1>";
 LoadedMSG = "<h1>GoldHEN Carregat</h1>";
 PLfile = "./payloads/goldhen.bin";
-load_payload();
-}
-
-function load_LinuxLoader1gb(){
-msgs.innerHTML = "<h1>Carregant Linux 1GB... Espereu</h1>"
-LoadedMSG = "<h1>Linux 1GB Carregat</h1>"
-PLfile = "./payloads/Linux-1gb.bin";
-load_payload();
-}
-
-function load_LinuxLoader2gb(){
-msgs.innerHTML = "<h1>Carregant Linux 2GB... Espereu</h1>"
-LoadedMSG = "<h1>Linux 2GB Carregat</h1>"
-PLfile = "./payloads/Linux-2gb.bin";
-load_payload();
-}
-
-function load_LinuxLoader3gb(){
-msgs.innerHTML = "<h1>Carregant Linux 3GB... Espereu</h1>"
-LoadedMSG = "<h1>Linux 3GB Carregat</h1>"
-PLfile = "./payloads/Linux-3gb.bin";
-load_payload();
-}
-
-function load_LinuxLoader4gb(){
-msgs.innerHTML = "<h1>Carregant Linux 4GB... Espereu</h1>"
-LoadedMSG = "<h1>Linux 4GB Carregat</h1>"
-PLfile = "./payloads/Linux-4gb.bin";
-load_payload();
-}
-
-function load_LinuxLoader5gb(){
-msgs.innerHTML = "<h1>Carregant Linux 5GB... Espereu</h1>"
-LoadedMSG = "<h1>Linux 5GB Carregat</h1>"
-PLfile = "./payloads/Linux-5gb.bin";
 load_payload();
 }
 
@@ -310,6 +275,41 @@ function load_disableUpdates(){
 msgs.innerHTML = "<h1>Carregant Disable Updates... Espereu</h1>"
 LoadedMSG = "<h1>Disable Updates Carregat</h1>"
 PLfile = "./payloads/disableupdates.bin";
+load_payload();
+}
+
+function load_LinuxLoader1gb(){
+msgs.innerHTML = "<h1>Carregant Linux 1GB... Espereu</h1>"
+LoadedMSG = "<h1>Linux 1GB Carregat</h1>"
+PLfile = "./payloads/Linux-1gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader2gb(){
+msgs.innerHTML = "<h1>Carregant Linux 2GB... Espereu</h1>"
+LoadedMSG = "<h1>Linux 2GB Carregat</h1>"
+PLfile = "./payloads/Linux-2gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader3gb(){
+msgs.innerHTML = "<h1>Carregant Linux 3GB... Espereu</h1>"
+LoadedMSG = "<h1>Linux 3GB Carregat</h1>"
+PLfile = "./payloads/Linux-3gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader4gb(){
+msgs.innerHTML = "<h1>Carregant Linux 4GB... Espereu</h1>"
+LoadedMSG = "<h1>Linux 4GB Carregat</h1>"
+PLfile = "./payloads/Linux-4gb.bin";
+load_payload();
+}
+
+function load_LinuxLoader5gb(){
+msgs.innerHTML = "<h1>Carregant Linux 5GB... Espereu</h1>"
+LoadedMSG = "<h1>Linux 5GB Carregat</h1>"
+PLfile = "./payloads/Linux-5gb.bin";
 load_payload();
 }
 
